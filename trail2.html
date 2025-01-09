@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <input type="hidden" value="123" />
+    <p>This is a paragraph.</p>
+    <script>
+        var h1Tags = document.getElementsByTagName("h1");
+        for (var i = 0; i < h1Tags.length; i++) {
+            console.log(h1Tags[i].innerHTML);
+        }
+        var inputTags = document.getElementsByTagName("input");
+        for (var i = 0; i < inputTags.length; i++) {
+            console.log(inputTags[i].value);
+        }
+        var pTags = document.getElementsByTagName("p");
+        for (var i = 0; i < pTags.length; i++) {
+            console.log(pTags[i].innerHTML);
+        }
+    </script>
+</body>
+</html>
