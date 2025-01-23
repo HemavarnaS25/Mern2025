@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Demo</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #fff;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        div {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+
+        p, ol {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interview Questions</h1>
+
+    <div>
+        <h3>1. What is Git?</h3>
+        <p>Git is a distributed system designed for version control to manage codebases efficiently.</p>
+    </div>
+    <div>
+        <h3>2. Which command is used to make a folder or file as a GitHub repository?</h3>
+        <p>The command <b>git init</b> initializes a folder or file as a GitHub repository.</p>
+    </div>
+    <div>
+        <h3>3. Why Git is fast in executing commands?</h3>
+        <p>Git operates quickly because it is implemented in the highly efficient <b>C programming language</b>.</p>
+    </div>
+    <div>
+        <h3>4. How the staging area is called Before the first push?</h3>
+        <p>Before the first push, the staging area is commonly referred to as the <b>index or cache</b>.</p>
+    </div>
+    <div>
+        <h3>5. In a local repository, if the root folder is the repository, what is the name of the subfolder?</h3>
+        <ol type="a">
+            <li>Repository</li>
+            <li>Folder</li>
+            <li>Subfolder</li>
+            <li>None of the above</li>
+        </ol>
+        <p>Ans: <b>d. None of the above</b>.</p>
+    </div>
+    <div>
+        <h3>6. What is spec file in MEAN stack?</h3>
+        <p>A spec file contains test cases that validate whether a specific component, function, or module behaves as required. The term "spec" is derived from specification, outlining expected behavior.</p>
+    </div>
+    <div>
+        <h3>7. If following is typed in a HTML file without its basic structure what will be there in the inspect tab?</h3>
+        <ol type="i">
+            <li>&lt;h1&gt;Hello world!&lt;/h1&gt;</li>
+            <li>&lt;title&gt;sece2025&lt;/title&gt;<br>
+                &lt;h1&gt;Hello world!&lt;/h1&gt;</li>
+            <li>&lt;h1&gt;Hello world!&lt;/h1&gt;<br>
+                &lt;title&gt;sece2025&lt;/title&gt;</li>
+        </ol>
+        <p>Ans: The browser structures the HTML by default, placing the &lt;title&gt; inside the head and the &lt;h1&gt; inside the body, adhering to HTML parsing rules.</p>
+    </div>
+
+    <h1>R&D Questions</h1>
+
+    <div>
+        <h3>1. Why Git is not showing the git commit command while adding a file and it is showing a command for unstage?</h3>
+        <p>Git doesn’t show the commit command because the files are already staged and ready for a commit. Instead, it provides an option to unstage them if needed.</p>
+    </div>
+    <div>
+        <h3>2. What is the difference between href and src and why is it used in img and anchor tags?</h3>
+        <p>The href attribute is used in anchor tags for navigation to external resources, while the src attribute is used in img tags to embed external content like images within the webpage.</p>
+    </div>
+    <div>
+        <h3>3. How the title tag is fetched to head and h1 is fetched to body when rendering an HTML file without structure?</h3>
+        <p>When parsing an unstructured HTML file, the browser automatically assigns the &lt;title&gt; tag to the head section and the &lt;h1&gt; tag to the body for proper rendering.</p>
+    </div>
+    <div>
+        <h3>4. While exporting a component, why is the default keyword mandatory?</h3>
+        <p>The default keyword is optional; it enables default exports, making the component importable without curly braces. Named exports require the use of curly braces.</p>
+    </div>
+    <div>
+        <h3>5. What is the difference between spread and rest operators?</h3>
+        <p>The spread operator expands elements of an array or object, while the rest operator gathers multiple values into an array, often for function parameters.</p>
+    </div>
+</body>
+</html>
