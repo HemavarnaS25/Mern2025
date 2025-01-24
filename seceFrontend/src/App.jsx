@@ -15,6 +15,9 @@ import UseRef from './components/FunctionalComponents/Hooks/UseRef';
 import UseReducer from './components/FunctionalComponents/Hooks/UseReducer';
 import UseMemo from './components/FunctionalComponents/Hooks/UseMemo';
 import UseCallback from './components/FunctionalComponents/Hooks/UseCallback';
+import ReactLifecycleMethods from './components/classComponents/ReactLifecycleMethods';
+import UseContext from './components/FunctionalComponents/Hooks/UseContext';
+import Memo from './components/FunctionalComponents/Memoization/Memo';
 //import List from './components/FunctionalComponents/Hooks/List';
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +30,8 @@ function App() {
       <Route path="/about"element={<About />}></Route>
       <Route path="/gallery"element={<Gallery page="Gallery" image="SECE Logo" />}></Route>
       <Route path="/contact"element={<Contact />}></Route>
+      <Route path="/rlm"element={<ReactLifecycleMethods/>}></Route>
+
       <Route path="/useApi"element={<UseEffectAPI />}></Route>
       <Route path="/signup"element={<Signup />}></Route>
       <Route path="/login"element={<Login />}></Route>
@@ -36,6 +41,8 @@ function App() {
       <Route path="/use-ref" element={<UseRef/>}></Route>
       <Route path="/use-memo"element={<UseMemo />}></Route>
       <Route path="/use-callback" element={<UseCallback />}></Route>
+      <Route path="/use-context" element={<UseContext />}></Route>
+      <Route path="/memo" element={<Memo />}></Route>
       {/* <Route path="/list" element={<List />}></Route> */}
       <Route path="/usereducer"element={<UseReducer />}></Route>
       </Routes>
