@@ -44,7 +44,7 @@ function App() {
       <Route path="/use-callback" element={<UseCallback />}></Route>
       <Route path="/use-context" element={<UseContext />}></Route>
       <Route path="/memo" element={<Memo />}></Route>
-      <Route path="/welcome" element={<Welcome />}></Route>
+      {/* <Route path="/welcome" element={<Welcome />}></Route> */}
       {/* <Route path="/list" element={<List />}></Route> */}
       <Route path="/usereducer"element={<UseReducer />}></Route>
       </Routes>

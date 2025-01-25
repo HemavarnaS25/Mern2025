@@ -34,7 +34,7 @@ const Navbar = () => {
                                 <li><Link to='/use-callback' className="link">UseCallback</Link></li>
                                 <li><Link to='/use-context' className="link">UseContext</Link></li>
                                 <li><Link to='/usereducer' className="link">UseReducer</Link></li>
-                                <li><Link to='/welcome' className="link">Welcome</Link></li>
+                                {/* <li><Link to='/welcome' className="link">Welcome</Link></li> */}
                                 <li><Link to='/rlm' className="link">ReactLifecycleMethods</Link></li>
                                 <li><Link to='/useimage' className="link">UseEffect API Image</Link></li>
                             </ul>
