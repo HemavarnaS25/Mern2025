@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        body {
+            border: 15px rgb(255, 251, 1) solid;
+            padding: 50px; 
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh; 
+            box-sizing: border-box; 
+            color: aliceblue;
+            background-color: black;
+        }
+        h1 {
+            margin-bottom: 20px; 
+        }
+        .div {
+            margin-bottom: 15px; 
+        }
+        input {
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <div>
+        <h4>UserName:</h4>
+        <input type="text" name="Username" placeholder="Enter your username"/>
+    </div>
+    <div>
+        <h4>Password:</h4>
+        <input type="password" placeholder="Enter your password"/>
+    </div>
+    <div>
+        <br>
+        <button type="submit" name="login" value="Login">Login</button>
+    </div>
+</body>
+</html>
