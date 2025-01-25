@@ -3,10 +3,15 @@ import { Link } from 'react-router-dom';
 import '../../css/Navbar.css';
 
 const Navbar = () => {
-    const [dropdown, showDropdown] = useState(false);
+    const [hooksDropdown, showHooksDropdown] = useState(false);
+    const [memoDropdown, showMemoDropdown] = useState(false);
 
-    const toggleDropdown = () => {
-        showDropdown(prevState => !prevState);
+    const toggleHooksDropdown = () => {
+        showHooksDropdown(prevState => !prevState);
+    };
+
+    const toggleMemoDropdown = () => {
+        showMemoDropdown(prevState => !prevState);
     };
 
     return (
@@ -17,14 +22,27 @@ const Navbar = () => {
                     <li><Link to='/about' className="link">About</Link></li>
                     <li><Link to='/gallery' className="link">Gallery</Link></li>
                     <li><Link to='/contact' className="link">Contact</Link></li>
-                    <li><Link to='/memo' className="link">Memo</Link></li>
                     <div
-                        onMouseEnter={toggleDropdown}
-                        onMouseLeave={toggleDropdown}
+                        onMouseEnter={toggleMemoDropdown}
+                        onMouseLeave={toggleMemoDropdown}
+                        className="dropdown-container"
+                    >
+                        <span>Memo</span>
+                        {memoDropdown && (
+                            <ul className="dropdown-menu">
+                                <li><Link to='/use-memo-basics' className="link">Memo Basics</Link></li>
+                                <li><Link to='/memo-optimization' className="link">Optimization with Memo</Link></li>
+                                <li><Link to='/memo-vs-useMemo' className="link">Memo vs UseMemo</Link></li>
+                            </ul>
+                        )}
+                    </div>
+                    <div
+                        onMouseEnter={toggleHooksDropdown}
+                        onMouseLeave={toggleHooksDropdown}
                         className="dropdown-container"
                     >
                         <span>Hooks</span>
-                        {dropdown && (
+                        {hooksDropdown && (
                             <ul className="dropdown-menu">
                                 <li><Link to='/useState' className='link'>useState</Link></li>
                                 <li><Link to='/useEffect' className='link'>useEffect</Link></li>
@@ -34,7 +52,6 @@ const Navbar = () => {
                                 <li><Link to='/use-callback' className="link">UseCallback</Link></li>
                                 <li><Link to='/use-context' className="link">UseContext</Link></li>
                                 <li><Link to='/usereducer' className="link">UseReducer</Link></li>
-                                {/* <li><Link to='/welcome' className="link">Welcome</Link></li> */}
                                 <li><Link to='/rlm' className="link">ReactLifecycleMethods</Link></li>
                                 <li><Link to='/useimage' className="link">UseEffect API Image</Link></li>
                             </ul>
@@ -46,6 +63,6 @@ const Navbar = () => {
             </nav>
         </header>
     );
-}
+};
 
 export default Navbar;
