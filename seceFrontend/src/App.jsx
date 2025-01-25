@@ -18,6 +18,7 @@ import UseCallback from './components/FunctionalComponents/Hooks/UseCallback';
 import ReactLifecycleMethods from './components/classComponents/ReactLifecycleMethods';
 import UseContext from './components/FunctionalComponents/Hooks/UseContext';
 import Memo from './components/FunctionalComponents/Memoization/Memo';
+import Welcome from './components/FunctionalComponents/welcome';
 //import List from './components/FunctionalComponents/Hooks/List';
 function App() {
   const [count, setCount] = useState(0)
@@ -43,6 +44,7 @@ function App() {
       <Route path="/use-callback" element={<UseCallback />}></Route>
       <Route path="/use-context" element={<UseContext />}></Route>
       <Route path="/memo" element={<Memo />}></Route>
+      <Route path="/welcome" element={<Welcome />}></Route>
       {/* <Route path="/list" element={<List />}></Route> */}
       <Route path="/usereducer"element={<UseReducer />}></Route>
       </Routes>
